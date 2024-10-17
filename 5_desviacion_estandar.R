@@ -2,7 +2,9 @@ source("assert.R")
 
 calc_desviacion_estandar <- function(conjunto) {
   ## Tu codigo aca
-  return(0)
+  
+  ##return(sqrt(var(conjunto)))
+  return (sd(conjunto))
 }
 
 assert(calc_desviacion_estandar(c(2, 4, 4, 4, 5, 5, 7, 9)), 2.14)

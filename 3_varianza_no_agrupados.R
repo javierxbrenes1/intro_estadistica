@@ -1,8 +1,10 @@
 source("assert.R")
 
 calc_varianza_no_agrupados <- function(conjunto) {
-  ## Tu codigo aca
-  return(0)
+  media <- sum(conjunto) / length(conjunto)
+  x <- (conjunto - media) ^ 2
+  suma <- sum(x)
+  return(suma/(length(conjunto)-1))
 }
 
 assert(calc_varianza_no_agrupados(c(2, 4, 5, 4, 5)), 1.5)

@@ -4,6 +4,6 @@ assert <- function(result, expect) {
         print("TEST passed 😃")
     } else {
         print("TEST failed 😥 ")
-        print(result)
+        print(result, expect)
     }
 }

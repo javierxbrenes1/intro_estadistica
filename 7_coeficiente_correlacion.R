@@ -7,8 +7,11 @@ horas_estudio_x_calificacion <- data.frame(
 )
 
 calc_coeficiente_correlacion <- function(conjunto) {
-  ## Tu codigo aca
-  return(0)
+  ## 
+  covarianza <- cov(conjunto$x, conjunto$y)
+  desviacion_estandar_x <- sd(conjunto$x)
+  desviacion_estandar_y <- sd(conjunto$y)
+  return(covarianza / (desviacion_estandar_x * desviacion_estandar_y))
 }
 
 assert(calc_coeficiente_correlacion(horas_estudio_x_calificacion), 1)

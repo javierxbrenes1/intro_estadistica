@@ -1,5 +1,6 @@
 calc_varianza_agrupados <- function(conjunto) {
   ## Tu codigo aca
+  
   return(0)
 }
 
